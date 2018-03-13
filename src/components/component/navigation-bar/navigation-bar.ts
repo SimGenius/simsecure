@@ -11,8 +11,8 @@ export default class NavigationBar extends Component {
     render(): HTMLElement {
         let dom = document.createElement('div')
         dom.setAttribute('class','navigation-bar')
-        dom.innerHTML = `<p class="navigation-bar-title">${this.props.title}</p>`
-        dom.addEventListener('click',()=>this.emit('click','test'))
+        dom.innerHTML = `<p class="navigation-bar-title">${this.state.props.title}</p>`
+        // dom.addEventListener('click',()=>this.emit('click','test'))
         return dom
         // return (
         //     `<div class="navigation-bar">

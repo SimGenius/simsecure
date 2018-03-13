@@ -12,7 +12,7 @@ export default class TextMessageBubble extends MessageContainer {
     render(): HTMLElement {
         let dom = document.createElement('p')
         dom.setAttribute('class','text')
-        dom.innerHTML = this.props.message.content
+        dom.innerHTML = this.state.props.message.content
         return dom
     }
 

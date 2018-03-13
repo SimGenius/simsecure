@@ -13,9 +13,9 @@ export default class LinkMessageBubble extends MessageContainer {
     render(): HTMLElement {
         let dom = document.createElement('a')
         dom.setAttribute('class','link')
-        dom.setAttribute('href',this.props.message.content)
+        dom.setAttribute('href',this.state.props.message.content)
         dom.setAttribute('target','_blank')
-        dom.innerHTML = this.props.message.content
+        dom.innerHTML = this.state.props.message.content
         return dom
     }
 

@@ -14,8 +14,8 @@ export default class ImageMessageBubble extends MessageContainer {
     render(): HTMLElement {
         let dom = document.createElement('img')
         dom.setAttribute('class', 'bubble-img')
-        dom.setAttribute('src', this.props.message.content)
-        dom.addEventListener('click', () => this.onImageClicked(this.props.message.content))
+        dom.setAttribute('src', this.state.props.message.content)
+        dom.addEventListener('click', () => this.onImageClicked(this.state.props.message.content))
         // dom.outerHTML = `<img class="bubble-img" src="${this.data.message.content}">`
         return dom
     }

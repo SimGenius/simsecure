@@ -13,7 +13,7 @@ import { Methods } from './framework/types/component/methods';
 
 
 // let app = document.getElementById('app')
-let localhost = 'http://10.64.40.240'
+let localhost = 'http://10.64.40.240:8002'
 
 export default class App extends RootComponent {
     protected setData() {
@@ -23,10 +23,10 @@ export default class App extends RootComponent {
                 { userId: 1, content: 'test1', messageId: 0, time: 0, type: 'text' },
                 { userId: 2, content: 'test2', messageId: 0, time: 0, type: 'text' },
                 { userId: 1, content: 'https://simgenius.cn/blog3', messageId: 0, time: 0, type: 'link' },
-                { userId: 1, content: localhost + '/test/logo.png', messageId: 0, time: 0, type: 'image' },
-                { userId: 2, content: localhost + '/test/logo.png', messageId: 0, time: 0, type: 'image' },
-                { userId: 2, content: localhost + '/test/test1.jpg', messageId: 0, time: 0, type: 'image' },
-                { userId: 1, content: localhost + '/test/test1.jpg', messageId: 0, time: 0, type: 'image' },
+                { userId: 1, content: localhost + '/logo.png', messageId: 0, time: 0, type: 'image' },
+                { userId: 2, content: localhost + '/logo.png', messageId: 0, time: 0, type: 'image' },
+                { userId: 2, content: localhost + '/test1.jpg', messageId: 0, time: 0, type: 'image' },
+                { userId: 1, content: localhost + '/test1.jpg', messageId: 0, time: 0, type: 'image' },
                 { userId: 2, content: 'is that successful?', messageId: 0, time: 0, type: 'text' },
                 { userId: 1, content: 'yes', messageId: 0, time: 0, type: 'text' }
 
@@ -56,24 +56,24 @@ export default class App extends RootComponent {
 
         let dom = document.createElement('div')
 
-        let navi = new NavigationBar(this, { title: 'SimTalk' }, {
-            click: function (word: string) {
-                console.log(word)
+        let navi = new NavigationBar({
+            props:{
+                title:'SimTalk DEV'
             }
         })
 
-        let inputBar = new InputBar(this, {}, {
-            sendMessage: function (message: Message) {
-                self.data.messages = self.data.messages.concat(message)
-                console.log(self.data)
-            }
-        })
+        // let inputBar = new InputBar(this, {}, {
+        //     sendMessage: function (message: Message) {
+        //         self.state.data.messages = self.state.data.messages.concat(message)
+        //         console.log(self.state.data)
+        //     }
+        // })
 
-        let messageView = new MessageView(this, { messageData: this.data.messages }, {})
+        // let messageView = new MessageView(this, { messageData: this.state.data.messages }, {})
 
-        dom.appendChild(this.appendComponent(navi))
-        dom.appendChild(this.appendComponent(messageView))
-        dom.appendChild(this.appendComponent(inputBar))
+        // dom.appendChild(this.appendComponent(navi))
+        // dom.appendChild(this.appendComponent(messageView))
+        // dom.appendChild(this.appendComponent(inputBar))
 
         return dom
     }
