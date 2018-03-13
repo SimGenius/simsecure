@@ -1,0 +1,39 @@
+.input-bar{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    min-height: 40px;
+    max-height: 120px;
+    background: rgba(222,222,222, 0.8);
+    -webkit-backdrop-filter: saturate(1.0) blur(20px);
+    z-index: 999;
+}
+
+.input-bar .text-input{
+    float: right;
+    width: calc(100% - 70px);
+    background: #fff;
+    height: 16px;
+    margin: 5px 5px 5px 0;
+    padding: 7px 6px;
+    font-size: 14px;
+    line-height: 16px;
+    overflow-y: scroll;
+    border:none;
+    border-radius: 3px; 
+    resize: none;
+    color:#555;
+}
+
+.input-bar .btn-pic-select{
+    display: block;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 4px;
+    border-radius: 20px;
+    border: solid #555 1px;
+    text-align: center;
+    margin: 6px 12px;
+    float:left;
+    color: #555;
+}

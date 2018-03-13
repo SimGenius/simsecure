@@ -1,0 +1,35 @@
+.navigation-bar {
+    height: 50px;
+    width: 100%;
+    /*background-color: #333333;*/
+    position: fixed;
+    display: inline-block;
+    /*-webkit-backdrop-filter: saturate(100%) blur(20px);*/
+    background: rgba(48, 48, 48, 0.8);
+    -webkit-backdrop-filter: saturate(1.0) blur(20px);
+    z-index: 999;
+    /*backdrop-filter: blur(20px);*/
+}
+
+.navigation-bar-button {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.navigation-bar-button img {
+    width: 26px;
+    height: 26px;
+    padding: 12px;
+}
+
+.navigation-bar-title {
+    width: 100%;
+    margin: auto;
+    float: left;
+    line-height: 50px;
+    vertical-align: middle;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: center;
+}

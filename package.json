@@ -1,0 +1,26 @@
+{
+  "name": "secure-talk",
+  "version": "1.0.0",
+  "description": "a secure IM application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --host 0.0.0.0 --port 8000",
+    "start": "webpack-dev-server --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SimGenius",
+  "license": "NONE",
+  "devDependencies": {
+    "css-loader": "^0.28.10",
+    "style-loader": "^0.19.1",
+    "ts-loader": "^3.5.0",
+    "typescript": "^2.7.2",
+    "webpack": "3.11.0",
+    "webpack-dev-server": "2.11.1"
+  },
+  "dependencies": {
+    "resetcss": "^1.0.3",
+    "sim-util": "^1.0.7",
+    "uuidjs": "^4.0.3"
+  }
+}

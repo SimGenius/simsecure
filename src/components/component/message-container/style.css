@@ -1,0 +1,29 @@
+.container{
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px 10px 0 10px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.bubble-my{
+    display: block;
+    float: right;
+    max-width: 70%;
+    background-color: cornflowerblue;
+    padding: 10px;
+    border-radius: 2px;
+
+ 
+}
+
+
+.bubble-his{
+    display: block;
+    float: left;
+    max-width: 70%;
+    background-color: rgb(233, 233, 233);
+    padding: 10px;
+    border-radius: 2px;
+}
